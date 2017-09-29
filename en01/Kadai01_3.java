@@ -6,8 +6,10 @@
 package en01;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import javax.swing.JFileChooser;
@@ -149,7 +151,17 @@ public class Kadai01_3 extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        
+        try {
+            BufferedWriter bw=new BufferedWriter(new FileWriter(new File("out13.txt")));
+            for (String line:jTextArea1.getText().split("\n")){
+                bw.write(line);
+                bw.newLine();
+            }
+            bw.close();
+            jTextArea1.append("\n"+"out13.txtに保存しました");
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
