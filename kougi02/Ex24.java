@@ -40,7 +40,7 @@ public class Ex24 {
             br.close();
 
             for (Tweet2 tweet2 : tlist) {
-
+                
                 Calendar cal = Calendar.getInstance();
                 cal.add(Calendar.DATE, -10);
 
