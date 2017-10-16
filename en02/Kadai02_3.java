@@ -195,8 +195,11 @@ public class Kadai02_3 extends javax.swing.JFrame {
         String kind=jTextField2.getText();
         
         for (Cat cat : catlist) {
-        
+            if (kind.equals(cat.getKind())) {
+                jTextArea2.append(cat.getName()+":"+cat.getKind()+"\n");
+            }
         }
+        
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
