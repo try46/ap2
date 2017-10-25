@@ -187,8 +187,10 @@ public class Kadai02_3 extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         String name=jTextField1.getText();
-        jTextArea1.append(name+"\n");
+            String output[]=name.split(",");
+            jTextArea1.append(output[0]+":"+output[1]+"\n");
         
+       
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
