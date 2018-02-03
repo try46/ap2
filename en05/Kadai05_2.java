@@ -22,8 +22,8 @@ public class Kadai05_2 {
             Connection con = DriverManager.getConnection(driverUrl, "db", "db");
             String sql = "insert into T_TWEET (twitterid, tweettext, iine) values(?,?,?)";
             PreparedStatement ps = con.prepareStatement(sql);
-            ps.setString(1, "abc");
-            ps.setString(2, "おいしい!");
+            ps.setString(1, "dora");
+            ps.setString(2, "おいしい!!qqqq");
             ps.setInt(3, 5);
             int count=ps.executeUpdate();
             System.out.println(count);

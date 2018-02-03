@@ -12,7 +12,7 @@ package en00;
 public class Q02 {
 
     public static void main(String[] args) {
-        Item item1 = new Item("apple", 200);
+        Item item1 = new ItemBuilder().setName("apple").setValue(200).createItem();
         System.out.println(item1.getName() + "," + item1.getValue());
         Item item2 = item1;
         item2.setValue(300);
